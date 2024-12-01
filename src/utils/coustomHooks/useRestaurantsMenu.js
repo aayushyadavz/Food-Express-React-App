@@ -11,7 +11,9 @@ const useRestaurantsMenu = (resId) => {
   }, [resId]);
 
   const fetchMenu = async () => {
-    const response = await fetch(`/.netlify/functions/fetchSwiggyMenu`); // Putting resId between the Api URL
+    const response = await fetch(
+      `/.netlify/functions/fetchSwiggyMenu?resId=${resId}`
+    ); // Putting resId between the Api URL
     const data = await response.json();
     setResMenu(data.data);
   };
