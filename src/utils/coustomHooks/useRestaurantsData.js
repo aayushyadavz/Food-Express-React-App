@@ -14,7 +14,7 @@ const useRestaurantsData = () => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch("/.netlify/functions/fetchSwiggyMenu");
+    const response = await fetch("/.netlify/functions/fetchSwiggy");
     const data = await response.json();
     console.log(data);
 
