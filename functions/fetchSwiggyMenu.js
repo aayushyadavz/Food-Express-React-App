@@ -1,5 +1,3 @@
-const fetch = require("node-fetch");
-
 exports.handler = async (event, context) => {
   const { resId } = event.queryStringParameters;
 
@@ -11,7 +9,9 @@ exports.handler = async (event, context) => {
   }
 
   try {
-    // Replace with your actual restaurant menu API
+    // Dynamically import node-fetch
+    const { default: fetch } = await import("node-fetch");
+
     const response = await fetch(
       `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`
     );
