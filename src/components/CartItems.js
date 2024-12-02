@@ -14,7 +14,7 @@ const CartItems = ({ itemsData }) => {
       data-testid="item"
       className="flex justify-between items-center gap-2 border-t-[1px] border-gray-300"
     >
-      <div className="flex justify-between px-3 items-center text-lg w-full gap-3">
+      <div className="flex justify-between px-3 items-center text-lg w-full gap-3 sm:gap-28 md:gap-24">
         <img
           className="w-14 h-12 object-cover rounded-lg my-1 flex-shrink-0"
           src={MENU_IMG_URL + itemsData.imageId}

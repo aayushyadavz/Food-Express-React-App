@@ -16,12 +16,12 @@ const RestaurantCard = (props) => {
       className="flex flex-row sm:flex-col sm:w-52 w-full sm:p-1 hover:border hover:border-red-600 hover:rounded-lg sm:h-[277px] h-28 hover:shadow-xl"
     >
       <img
-        className="sm:h-36 h-full sm:w-full object-cover sm:rounded-3xl shadow-md"
+        className="sm:h-36 h-full w-[40%] sm:w-full object-cover sm:rounded-3xl shadow-md"
         alt="RestaurantCard logo"
         src={CDN_URL + cloudinaryImageId}
         p
       />
-      <div className="p-3">
+      <div className="p-3 w-[60%] sm:w-full">
         <h3 className="text-xl font-bold overflow-ellipsis overflow-hidden w-full line-clamp-1">
           {name}
         </h3>

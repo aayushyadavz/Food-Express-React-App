@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-gray-500">
-      <div className="flex items-center justify-center py-10 ">
-        <div className="flex justify-between md:w-[60%] w-4/5">
+      <div className="flex items-center justify-center sm:py-10 py-6 px-6 sm:px-0">
+        <div className="flex flex-col sm:flex-row justify-between sm:w-3/4 md:w-[60%] w-full gap-3 sm:gap-0">
           <div>
             <img
               className="w-24 rounded-lg"

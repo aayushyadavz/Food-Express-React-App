@@ -23,11 +23,14 @@ function Contact() {
   };
 
   return (
-    <div className="md:mt-20 mt-16 flex justify-center bg-gray-200">
-      <div className="md:w-[60%] w-full text-left flex justify-center p-5 bg-white">
-        <div className="md:w-[50%] w-3/4 my-12">
+    <div className="md:mt-20 mt-16 sm:mt-0 flex justify-center items-center bg-gray-200">
+      <div className="md:w-[60%] w-full text-left flex justify-center items-center p-5 sm:p-0 md-p-5 bg-white sm:min-h-screen md:min-h-0">
+        <div className="md:w-[50%] sm:w-[70%] w-4/5 my-12">
           {!submitted ? (
-            <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+            <form
+              className="flex flex-col gap-5 sm:gap-8 md:gap-5"
+              onSubmit={handleSubmit}
+            >
               <h2 className="text-center text-2xl font-bold">Contact Us</h2>
 
               <label className="text-lg font-semibold">

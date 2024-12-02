@@ -40,7 +40,7 @@ const Body = () => {
   return (
     <div className="flex justify-center w-full bg-gray-200">
       <div className="md:w-[75%] w-full md:mt-20 mt-16 bg-white px-6">
-        <div className="flex my-11 mx-14">
+        <div className="flex my-11 sm:mx-14">
           <div className="flex flex-1 border-solid border-2 border-gray-300 rounded-lg overflow-hidden">
             <input
               type="text"
@@ -70,7 +70,7 @@ const Body = () => {
             <i className="fa-solid fa-magnifying-glass text-xl text-gray-800 ml-3 pt-1"></i>
           </button>
         </div>
-        <h1 className="text-3xl font-bold">
+        <h1 className="sm:text-3xl text-2xl font-bold">
           Restaurants with online food delivery near you
         </h1>
         <div className="mt-5 mb-8 font-medium text-sm">
@@ -100,7 +100,7 @@ const Body = () => {
               ))}
           </div>
         ) : (
-          <div className="grid md:grid-cols-4 sm:grid-cols-3 gap-4 justify-items-start sm:justify-items-center mb-14">
+          <div className="grid md:grid-cols-4 sm:grid-cols-3 gap-4 sm:justify-items-center mb-14">
             {filteredRestaurants.map((restaurant) => (
               <Link to={"/menu/" + restaurant.info.id} key={restaurant.info.id}>
                 {/* {restaurant.info.aggregatedDiscountInfoV3 ? (

@@ -32,7 +32,7 @@ const Header = () => {
         <ul className="flex flex-col md:flex-row gap-3 md:gap-0 font-semibold text-xl md:text-lg hover:cursor-pointer md:text-gray-800 text-red-400">
           <li className="px-3 mx-1 hover:text-red-600">
             <Link to="/">
-              <i class="fa-solid fa-house mr-2"></i>Home
+              <i className="fa-solid fa-house mr-2"></i>Home
             </Link>
           </li>
           <li className="px-3 mx-1 hover:text-red-600">
