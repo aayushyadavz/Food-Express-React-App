@@ -1,12 +1,19 @@
 import { MENU_IMG_URL } from "../utils/constants";
 import { addItems } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
+import { useState } from "react";
 
 const MenuCard = ({ itemsData }) => {
+  const [isClicked, setIsClicked] = useState(false);
   const dispatch = useDispatch();
 
   const handleClick = (itemsData) => {
     dispatch(addItems(itemsData));
+
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 500);
   };
 
   return (
@@ -31,7 +38,9 @@ const MenuCard = ({ itemsData }) => {
         />
         <div className="absolute inset-x-0 bottom-[-14px] pl-1">
           <button
-            className="text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg hover:bg-red-200"
+            className={` text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg hover:bg-red-200 transition ease-in-out delay-100 duration-75 ${
+              isClicked ? `translate-x scale-90` : ``
+            }`}
             onClick={() => handleClick(itemsData)}
           >
             ADD

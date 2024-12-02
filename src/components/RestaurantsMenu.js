@@ -43,13 +43,7 @@ const RestaurantsMenu = () => {
     <div className="flex justify-center w-full md:mt-20 mt-16 bg-gray-200">
       <div className="md:w-3/5 w-full bg-white">
         <h1 className="text-3xl font-bold pl-4 pt-3">{name}</h1>
-        <div
-          className="p-4 rounded-br-3xl rounded-bl-3xl mt-4 mb-6"
-          style={{
-            background:
-              "linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%)",
-          }}
-        >
+        <div className="p-4 rounded-br-3xl rounded-bl-3xl mt-4 mb-6 bg-gradient">
           <div className="bg-white px-4 py-5 rounded-2xl font-bold">
             <h3 className="text-xl">
               {avgRating} • {costForTwoMessage}

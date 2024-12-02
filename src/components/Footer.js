@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold mb-2">Company</h4>
-            <Link to="/about" className="text-gray-200 hover:text-red-300">
+            <Link to="/about" className="text-gray-200 ">
               About Us
             </Link>
           </div>
@@ -27,7 +27,7 @@ const Footer = () => {
             <h4 className="text-xl text-white font-semibold mb-2">
               Contact Us
             </h4>
-            <Link to="/contact" className="text-gray-200 hover:text-red-300">
+            <Link to="/contact" className="text-gray-200 ">
               Help & Support
             </Link>
           </div>
@@ -40,16 +40,16 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/aayushyadavz/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin fa-lg text-white hover:text-red-300"></i>
+                <i class="fa-brands fa-linkedin fa-lg text-white "></i>
               </a>
               <a
                 href="https://www.instagram.com/aayushyadavz/?next=%2F"
                 target="_blank"
               >
-                <i class="fa-brands fa-instagram mx-3 fa-lg text-white hover:text-red-300"></i>
+                <i class="fa-brands fa-instagram mx-3 fa-lg text-white"></i>
               </a>
               <a href="https://github.com/aayushyadavz" target="_blank">
-                <i class="fa-brands fa-github fa-lg text-white hover:text-red-300"></i>
+                <i class="fa-brands fa-github fa-lg text-white"></i>
               </a>
             </div>
           </div>

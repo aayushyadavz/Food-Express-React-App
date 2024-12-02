@@ -13,10 +13,10 @@ const RestaurantCard = (props) => {
   return (
     <div
       data-testid="resCard"
-      className="flex flex-row sm:flex-col sm:w-52 w-full sm:p-1 hover:border hover:border-red-600 hover:rounded-lg sm:h-[277px] h-28 hover:shadow-xl"
+      className="flex flex-row sm:flex-col sm:w-52 w-full sm:p-1 sm:h-[277px] shadow-md h-28 hover:shadow-xl transition ease-in-out delay-100 hover:translate-x hover:scale-95 rounded-lg duration-75"
     >
       <img
-        className="sm:h-36 h-full w-[40%] sm:w-full object-cover sm:rounded-3xl shadow-md"
+        className="sm:h-36 h-full w-[40%] sm:w-full object-cover sm:rounded-3xl"
         alt="RestaurantCard logo"
         src={CDN_URL + cloudinaryImageId}
         p

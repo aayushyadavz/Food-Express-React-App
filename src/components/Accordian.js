@@ -6,7 +6,7 @@ const Accordian = ({ data, isOpen, setShowIndex }) => {
   };
 
   return (
-    <div>
+    <div className="px-3 md:px-3">
       <div
         className="flex justify-between cursor-pointer py-4 px-4 my-2 bg-white"
         onClick={toggleAccordion}
