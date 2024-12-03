@@ -19,8 +19,11 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold mb-2">Company</h4>
-            <Link to="/about" className="text-gray-200 ">
-              About Us
+            <Link to="/" className="text-gray-200 block">
+              Home
+            </Link>
+            <Link to="/cart" className="text-gray-200 ">
+              Cart
             </Link>
           </div>
           <div>

@@ -37,22 +37,4 @@ const RestaurantCard = (props) => {
   );
 };
 
-// Higher Order Component
-const withPriceLabel = (RestaurantCard) => {
-  return (props) => {
-    const { resData } = props;
-    const { aggregatedDiscountInfoV3 } = resData?.info;
-
-    return (
-      <div>
-        <label className="absolute text-white font-extrabold bg-orange-400 bg-opacity-60 p-1 rounded-xl mt-3 ml-3">
-          {aggregatedDiscountInfoV3.header} {aggregatedDiscountInfoV3.subHeader}
-        </label>
-        <RestaurantCard {...props} />
-      </div>
-    );
-  };
-};
-
 export default RestaurantCard;
-export { withPriceLabel };

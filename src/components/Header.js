@@ -36,11 +36,6 @@ const Header = () => {
             </Link>
           </li>
           <li className="px-3 mx-1 hover:text-red-600">
-            <Link to="/about">
-              <i className="fa-solid fa-circle-exclamation mr-2"></i>About Us
-            </Link>
-          </li>
-          <li className="px-3 mx-1 hover:text-red-600">
             <Link to="/contact">
               <i className="fa-solid fa-phone mr-2"></i>Contact Us
             </Link>

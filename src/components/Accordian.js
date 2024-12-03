@@ -6,12 +6,12 @@ const Accordian = ({ data, isOpen, setShowIndex }) => {
   };
 
   return (
-    <div className="px-3 md:px-3">
+    <div className="px-3 sm:px-0 md:px-0">
       <div
         className="flex justify-between cursor-pointer py-4 px-4 my-2 bg-white"
         onClick={toggleAccordion}
       >
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold">
           {data.title} ({data.itemCards.length})
         </h3>
         <div>

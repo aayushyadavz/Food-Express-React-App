@@ -19,14 +19,16 @@ const MenuCard = ({ itemsData }) => {
   return (
     <div
       data-testid="foodItems"
-      className="flex justify-between py-3 px-4 items-center bg-white border-b-2 border-gray-100 gap-2 sm:gap-0"
+      className="flex justify-between py-3 px-4 items-center bg-white border-b-2 border-gray-100 gap-3 sm:gap-0"
     >
       <div className="w-8/12 sm:mb-4">
-        <h3 className="text-xl font-bold text-gray-600">{itemsData.name}</h3>
-        <p className="text-lg font-medium mb-4">
+        <h3 className="text-lg sm:text-xl font-bold text-gray-600 leading-tight">
+          {itemsData.name}
+        </h3>
+        <p className="text-base sm:text-lg font-medium mb-2 sm:mb-4">
           ₹ {itemsData.price / 100 || itemsData.defaultPrice / 100}
         </p>
-        <p className="text-gray-500 text-lg leading-tight cursor-pointer line-clamp-2 overflow-ellipsis">
+        <p className="text-gray-500 text-base sm:text-lg leading-tight cursor-pointer line-clamp-2 overflow-ellipsis">
           {itemsData.description}
         </p>
       </div>

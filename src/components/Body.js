@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RestaurantCard, { withPriceLabel } from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantsData from "../utils/coustomHooks/useRestaurantsData";
@@ -22,7 +22,6 @@ const Body = () => {
   } = useRestaurantsData();
 
   const onlineStatus = useOnlineStatus();
-  const RestaurantCardPriceLabel = withPriceLabel(RestaurantCard);
 
   if (onlineStatus === false) {
     return (
@@ -103,11 +102,7 @@ const Body = () => {
           <div className="grid md:grid-cols-4 sm:grid-cols-3 gap-4 sm:justify-items-center mb-14">
             {filteredRestaurants.map((restaurant) => (
               <Link to={"/menu/" + restaurant.info.id} key={restaurant.info.id}>
-                {/* {restaurant.info.aggregatedDiscountInfoV3 ? (
-                  <RestaurantCardPriceLabel resData={restaurant} />
-                ) : ( */}
                 <RestaurantCard resData={restaurant} />
-                {/* )} */}
               </Link>
             ))}
           </div>
