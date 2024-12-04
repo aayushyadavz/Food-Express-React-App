@@ -12,7 +12,7 @@ const RestaurantsMenu = () => {
   if (resMenu === null) {
     return (
       <div className="flex justify-center w-full pt-16">
-        <div className="w-[63%]">
+        <div className="w-[83%] sm:w-[63%]">
           {Array(10)
             .fill("")
             .map((_, index) => (
@@ -41,8 +41,8 @@ const RestaurantsMenu = () => {
 
   return (
     <div className="flex justify-center w-full md:mt-20 mt-16 bg-gray-200">
-      <div className="md:w-3/5 w-full bg-white">
-        <h1 className="text-3xl font-bold pl-4 pt-3">{name}</h1>
+      <div className="md:w-2/3 w-full bg-white sm:px-4">
+        <h1 className="text-3xl font-bold pl-4 pt-5">{name}</h1>
         <div className="p-4 rounded-br-3xl rounded-bl-3xl mt-4 mb-6 bg-gradient">
           <div className="bg-white px-4 py-5 rounded-2xl font-bold">
             <h3 className="text-xl">

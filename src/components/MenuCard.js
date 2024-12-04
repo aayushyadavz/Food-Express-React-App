@@ -40,7 +40,7 @@ const MenuCard = ({ itemsData }) => {
         />
         <div className="absolute inset-x-0 bottom-[-14px] pl-1">
           <button
-            className={` text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg hover:bg-red-200 transition ease-in-out delay-100 duration-75 ${
+            className={` text-green-500 bg-white text-xl font-semibold px-8 py-1 shadow-lg rounded-lg md:hover:bg-red-200 transition-all ease-in-out duration-100 ${
               isClicked ? `translate-x scale-90` : ``
             }`}
             onClick={() => handleClick(itemsData)}

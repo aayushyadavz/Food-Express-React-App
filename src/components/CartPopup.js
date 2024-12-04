@@ -11,7 +11,7 @@ const CartPopup = () => {
 
   return (
     <div className="w-full flex justify-center fixed bottom-0 left-0 z-50">
-      <div className="flex items-center w-full md:w-3/5 justify-between shadow-lg bg-red-500 px-4 py-2">
+      <div className="flex items-center w-full md:w-2/3 justify-between shadow-lg bg-red-500 px-4 py-2">
         <p className="text-lg text-white font-semibold">
           {cartItems.length} items added to the cart!
         </p>
