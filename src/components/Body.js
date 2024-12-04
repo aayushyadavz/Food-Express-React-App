@@ -36,6 +36,9 @@ const Body = () => {
     );
   }
 
+  const noResultsFound =
+    filteredRestaurants.length === 0 && searchText.trim() !== "";
+
   return (
     <div className="flex justify-center w-full bg-gray-200">
       <div className="md:w-[75%] w-full md:mt-20 mt-16 bg-white px-6">
@@ -90,7 +93,19 @@ const Body = () => {
             Less than 25 mins
           </button>
         </div>
-        {filteredRestaurants.length === 0 ? (
+        {noResultsFound ? (
+          <div className="md:min-h-screen flex flex-col items-center pt-9 pb-11 sm:py-48 md:py-0 md:pt-8 md:pb-0">
+            <img
+              className="w-9 sm:w-14 mb-2"
+              src="https://static.vecteezy.com/system/resources/thumbnails/009/652/218/small/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"
+              alt="Magnifying glass"
+            />
+            <h3 className="text-xs sm:text-xl font-semibold">
+              No results found for "{searchText}". Please try a different search
+              term.
+            </h3>
+          </div>
+        ) : filteredRestaurants.length === 0 ? (
           <div className="flex flex-wrap justify-between">
             {Array(12)
               .fill("")
